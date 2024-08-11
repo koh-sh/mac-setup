@@ -1,4 +1,5 @@
 brew "actionlint"
+brew "mas"
 brew "awscli"
 brew "bash-completion@2"
 brew "ccat"
@@ -57,3 +58,6 @@ vscode "vscodevim.vim"
 vscode "vue.volar"
 vscode "yzane.markdown-pdf"
 vscode "yzhang.markdown-all-in-one"
+mas "Keepa - Price Tracker", id: 1533805339
+mas "LINE", id: 539883307
+mas "RunCat", id: 1429033973
