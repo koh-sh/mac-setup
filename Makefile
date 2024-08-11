@@ -23,3 +23,8 @@ install_packages:
 	fi
 	@brew bundle
 	@echo "パッケージのインストールが完了しました。"
+
+.PHONY: set_dotfiles
+set_dotfiles:
+	@cd ../ && git clone https://github.com/koh-sh/dotfiles.git || (cd dotfiles && git pull)
+	@cd ../dotfiles && ./setup.sh
