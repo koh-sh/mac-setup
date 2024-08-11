@@ -36,3 +36,14 @@ dotfiles:
 mise:
 	@cd $${HOME} && mise install
 	@echo "mise installが完了しました。"
+
+# 実行しているターミナルにFull Disk Accessを許可してから実行
+.PHONY: safari
+safari:
+	@defaults write com.apple.Safari AlwaysRestoreSessionAtLaunch -bool true
+	@defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
+	@echo "Safariの起動時の挙動、およびURL表示設定を修正しました。"
+
+.PHONY: mac-system
+mac-system:
+	@bash mac-system.sh

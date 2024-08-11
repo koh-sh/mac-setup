@@ -14,3 +14,54 @@ xcode-select --install
 git clone https://github.com/koh-sh/mac-setup.git
 cd mac-setup && make all
 ```
+
+## Open each applications and set configs
+
+### All
+
+Set "Launch on start", and allow at Accesibility
+
+### Chrome
+
+login with Google account and disable `Show warning before quitting with ⌘Q`
+
+### VSCode
+
+Login with GitHub and sync settings
+
+### Clipy
+
+set main shortcut
+
+### ShowyEdge
+
+set blue for japanese
+
+### Safari
+
+Allow Full disk access for the using Terminal
+and run make safari
+
+```bash
+make safari
+```
+
+### Mail
+
+open app and login Google
+
+## Mac System configs
+
+### File Vault
+
+set enabled
+
+### Other settings
+
+run make mac-system
+
+```bash
+make mac-system
+```
+
+but it is not well tested, check each setting one by one
