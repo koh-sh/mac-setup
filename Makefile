@@ -21,9 +21,6 @@ brew: install_homebrew
 		echo "Brewfileが見つかりません。カレントディレクトリにBrewfileを配置してください。"; \
 		exit 1; \
 	fi
-	# vscode extentionをインストールするため先にVSCODEをインストールする
-	@/opt/homebrew/bin/brew install visual-studio-code
-	@open /Applications/\Visual\ Studio\ Code.app
 	@/opt/homebrew/bin/brew bundle
 	@echo "パッケージのインストールが完了しました。"
 
