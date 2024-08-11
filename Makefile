@@ -21,7 +21,7 @@ brew: install_homebrew
 		echo "Brewfileが見つかりません。カレントディレクトリにBrewfileを配置してください。"; \
 		exit 1; \
 	fi
-	@brew bundle
+	@/opt/homebrew/bin/brew bundle
 	@echo "パッケージのインストールが完了しました。"
 
 .PHONY: dotfiles
