@@ -21,6 +21,9 @@ brew: install_homebrew
 		echo "Brewfileが見つかりません。カレントディレクトリにBrewfileを配置してください。"; \
 		exit 1; \
 	fi
+	# vscode extentionをインストールするため先にVSCODEをインストールする
+	@/opt/homebrew/bin/brew install visual-studio-code
+	@open /Applications/\Visual\ Studio\ Code.app
 	@/opt/homebrew/bin/brew bundle
 	@echo "パッケージのインストールが完了しました。"
 
@@ -28,3 +31,7 @@ brew: install_homebrew
 dotfiles:
 	@cd ../ && git clone https://github.com/koh-sh/dotfiles.git || (cd dotfiles && git pull)
 	@cd ../dotfiles && ./setup.sh
+
+.PHONY: mise
+mise:
+	@cd $${HOME} && mise install

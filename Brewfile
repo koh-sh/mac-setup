@@ -1,3 +1,6 @@
+tap "genkiroid/cert"
+tap "k1low/tap"
+tap "koh-sh/tap"
 brew "actionlint"
 brew "mas"
 brew "awscli"
