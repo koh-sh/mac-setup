@@ -1,7 +1,6 @@
 # デフォルトのターゲット
 .PHONY: all
-all: brew set_dotfiles
-brew: install_homebrew install_packages
+all: brew dotfiles
 
 # Homebrewのインストール（既にインストールされている場合はスキップ）
 .PHONY: install_homebrew
@@ -15,8 +14,8 @@ install_homebrew:
 	fi
 
 # Brewfileからパッケージをインストール
-.PHONY: install_packages
-install_packages:
+.PHONY: brew
+brew: install_homebrew
 	@echo "Brewfileからパッケージをインストールしています..."
 	@if [ ! -f Brewfile ]; then \
 		echo "Brewfileが見つかりません。カレントディレクトリにBrewfileを配置してください。"; \
@@ -25,7 +24,7 @@ install_packages:
 	@brew bundle
 	@echo "パッケージのインストールが完了しました。"
 
-.PHONY: set_dotfiles
-set_dotfiles:
+.PHONY: dotfiles
+dotfiles:
 	@cd ../ && git clone https://github.com/koh-sh/dotfiles.git || (cd dotfiles && git pull)
 	@cd ../dotfiles && ./setup.sh
