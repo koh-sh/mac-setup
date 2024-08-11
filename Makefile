@@ -1,6 +1,7 @@
 # デフォルトのターゲット
 .PHONY: all
-all: install_homebrew install_packages
+all: brew set_dotfiles
+brew: install_homebrew install_packages
 
 # Homebrewのインストール（既にインストールされている場合はスキップ）
 .PHONY: install_homebrew
