@@ -56,6 +56,13 @@ open app and login Google
 
 set enabled
 
+### japanese input
+
+TODO: automation
+
+- Disable Live Conversion
+- Enable Windows-like shortcuts
+
 ### Other settings
 
 run make mac-system
@@ -65,3 +72,8 @@ make mac-system
 ```
 
 but it is not well tested, check each setting one by one
+
+## install other apps
+
+- [LogiTune](https://www.logicool.co.jp/ja-jp/video-collaboration/software/logi-tune-software.html)
+- [Logi Options+](https://www.logicool.co.jp/ja-jp/software/logi-options-plus.html)
