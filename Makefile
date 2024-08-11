@@ -1,6 +1,6 @@
 # デフォルトのターゲット
 .PHONY: all
-all: brew dotfiles
+all: brew dotfiles mise
 
 # Homebrewのインストール（既にインストールされている場合はスキップ）
 .PHONY: install_homebrew
@@ -28,7 +28,11 @@ brew: install_homebrew
 dotfiles:
 	@cd ../ && git clone https://github.com/koh-sh/dotfiles.git || (cd dotfiles && git pull)
 	@cd ../dotfiles && ./setup.sh
+	# directoryの権限修正
+	@chmod 755 /opt/homebrew/share
+	@echo "dotfilesの配置が完了しました。"
 
 .PHONY: mise
 mise:
 	@cd $${HOME} && mise install
+	@echo "mise installが完了しました。"
