@@ -54,6 +54,10 @@ defaults write com.apple.dock showAppExposeGestureEnabled -bool true
 defaults write com.apple.dock showAppExposeGesture -int 2
 echo "トラックパッド設定を変更しました。"
 
+# VSCodeのvimキーマッピング設定
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false
+
 # 設定の反映
 killall Dock
 killall ControlCenter
