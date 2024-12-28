@@ -50,6 +50,14 @@ make safari
 
 open app and login Google
 
+### Claude
+
+set config
+
+```bash
+cp configs/claude_desktop_config.json Library/Application\ Support/Claude/claude_desktop_config.json
+```
+
 ## Mac System configs
 
 ### File Vault

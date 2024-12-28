@@ -42,6 +42,7 @@ cask "raycast"
 cask "rectangle"
 cask "showyedge"
 cask "slack"
+cask "claude"
 cask "visual-studio-code"
 cask "wezterm"
 mas "Keepa - Price Tracker", id: 1533805339
