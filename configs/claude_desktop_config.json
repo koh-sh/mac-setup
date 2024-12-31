@@ -9,6 +9,18 @@
         "mcp/fetch"
       ]
     },
+    "filesystem": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "--mount", "type=bind,src=/Users/koh/work,dst=/projects/work",
+        "--mount", "type=bind,src=/Users/koh/github,dst=/projects/github",
+        "mcp/filesystem",
+        "/projects"
+      ]
+    },
     "git": {
       "command": "docker",
       "args": [
