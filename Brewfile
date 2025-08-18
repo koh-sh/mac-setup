@@ -1,7 +1,6 @@
 tap "genkiroid/cert"
 tap "jdx/tap"
 tap "k1low/tap"
-tap "koh-sh/tap"
 brew "mas"
 brew "bash-completion@2"
 brew "ccat"
@@ -38,8 +37,6 @@ cask "visual-studio-code"
 cask "wezterm"
 cask "keyboardcleantool"
 cask "karabiner-elements"
-cask "koh-sh/tap/codebuild-multirunner"
-cask "koh-sh/tap/ccnewline"
 mas "Keepa - Price Tracker", id: 1533805339
 mas "LINE", id: 539883307
 mas "RunCat", id: 1429033973
