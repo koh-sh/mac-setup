@@ -34,7 +34,7 @@ cask "showyedge"
 cask "slack"
 cask "claude"
 cask "visual-studio-code"
-cask "wezterm"
+cask "wezterm@nightly"
 cask "keyboardcleantool"
 cask "karabiner-elements"
 mas "Keepa - Price Tracker", id: 1533805339
