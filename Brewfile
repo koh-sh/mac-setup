@@ -35,6 +35,7 @@ cask "visual-studio-code"
 cask "wezterm@nightly"
 cask "keyboardcleantool"
 cask "karabiner-elements"
+cask "amical"
 mas "Keepa - Price Tracker", id: 1533805339
 mas "LINE", id: 539883307
 mas "RunCat", id: 1429033973
